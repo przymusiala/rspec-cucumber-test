@@ -1,0 +1,16 @@
+- @posts.each do |post|
+  .post
+    %h2.title
+      %a{:href => "#"}= post.title
+    %p.meta
+      %span.date= post.created_at
+      %span.posted
+        Napisane przez
+        %a{:href => "#"}= post.author
+    %div{:style => "clear: both;"} &nbsp;
+    .entry
+      %p= post.body
+      %p.links
+        = link_to 'Czytaj więcej', '#'
+        \|
+        = link_to 'Komentarze', '#'

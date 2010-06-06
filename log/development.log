@@ -1,0 +1,641 @@
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (89.4ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (222.0ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (2.4ms)[0m   [0;1mDROP DATABASE IF EXISTS `rspec_test_test`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCREATE DATABASE `rspec_test_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (103.5ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (123.4ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('0')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mDROP DATABASE IF EXISTS `rspec_test_test`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCREATE DATABASE `rspec_test_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (49.2ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (143.2ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('0')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (3.2ms)[0m   [0;1mDROP DATABASE IF EXISTS `rspec_test_test`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCREATE DATABASE `rspec_test_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (3.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (94.5ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (180.0ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('0')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (2.3ms)[0m   [0;1mDROP DATABASE IF EXISTS `rspec_test_test`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCREATE DATABASE `rspec_test_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (52.8ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (125.0ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (1.8ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('0')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (3.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (2.6ms)[0m   [0;1mDROP DATABASE IF EXISTS `rspec_test_test`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCREATE DATABASE `rspec_test_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (481.1ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (102.3ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('0')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePosts (20100606104939)
+  [4;36;1mSQL (95.7ms)[0m   [0;1mCREATE TABLE `posts` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `title` varchar(255), `body` text, `author` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100606104939')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (3.3ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mSQL (2.8ms)[0m   [0;1mdescribe `posts`[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mSHOW KEYS FROM `posts`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (224.0ms)[0m   [0;1mDROP DATABASE IF EXISTS `rspec_test_test`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCREATE DATABASE `rspec_test_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (37.7ms)[0m   [0mCREATE TABLE `posts` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `title` varchar(255), `body` text, `author` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (112.0ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (117.7ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100606104939')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (40.5ms)[0m   [0;1mDROP DATABASE IF EXISTS `rspec_test_test`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCREATE DATABASE `rspec_test_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (82.2ms)[0m   [0mCREATE TABLE `posts` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `title` varchar(255), `body` text, `author` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (159.8ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (110.4ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100606104939')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (39.1ms)[0m   [0;1mDROP DATABASE IF EXISTS `rspec_test_test`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE DATABASE `rspec_test_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (49.7ms)[0m   [0mCREATE TABLE `posts` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `title` varchar(255), `body` text, `author` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (113.5ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (120.1ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100606104939')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (38.0ms)[0m   [0;1mDROP DATABASE IF EXISTS `rspec_test_test`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE DATABASE `rspec_test_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (48.4ms)[0m   [0mCREATE TABLE `posts` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `title` varchar(255), `body` text, `author` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (113.1ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (118.6ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100606104939')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (38.9ms)[0m   [0;1mDROP DATABASE IF EXISTS `rspec_test_test`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCREATE DATABASE `rspec_test_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (42.0ms)[0m   [0mCREATE TABLE `posts` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `title` varchar(255), `body` text, `author` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (138.4ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (133.2ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100606104939')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (225.8ms)[0m   [0;1mDROP DATABASE IF EXISTS `rspec_test_test`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCREATE DATABASE `rspec_test_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (66.7ms)[0m   [0mCREATE TABLE `posts` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `title` varchar(255), `body` text, `author` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (144.2ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (110.3ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100606104939')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (4.8ms)[0m   [0;1mDROP DATABASE IF EXISTS `rspec_test_test`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCREATE DATABASE `rspec_test_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (48.9ms)[0m   [0mCREATE TABLE `posts` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `title` varchar(255), `body` text, `author` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (137.2ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (142.2ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100606104939')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-06-06 16:46:19) [GET]
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM `posts` [0m
+Rendering posts/index
+Completed in 11ms (View: 7, DB: 1) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-06-06 16:46:31) [GET]
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM `posts` [0m
+Rendering posts/index
+Completed in 5ms (View: 1, DB: 1) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-06-06 16:47:14) [GET]
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM `posts` [0m
+Rendering posts/index
+Completed in 5ms (View: 1, DB: 1) | 200 OK [http://localhost/posts]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-06-06 16:47:15) [GET]
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM `posts` [0m
+Rendering posts/index
+Completed in 6ms (View: 1, DB: 1) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-06-06 16:47:16) [GET]
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM `posts` [0m
+Rendering posts/index
+Completed in 5ms (View: 1, DB: 1) | 200 OK [http://localhost/posts]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-06-06 16:47:18) [GET]
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM `posts` [0m
+Rendering posts/index
+Completed in 71ms (View: 1, DB: 1) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-06-06 16:47:19) [GET]
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM `posts` [0m
+Rendering posts/index
+Completed in 4ms (View: 1, DB: 1) | 200 OK [http://localhost/posts]
+  [4;35;1mSQL (0.8ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-06-06 16:47:20) [GET]
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM `posts` [0m
+Rendering posts/index
+Completed in 4ms (View: 1, DB: 1) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-06-06 16:47:20) [GET]
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM `posts` [0m
+Rendering posts/index
+Completed in 5ms (View: 1, DB: 1) | 200 OK [http://localhost/posts]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-06-06 16:47:23) [GET]
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM `posts` [0m
+Rendering posts/index
+Completed in 4ms (View: 1, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-06-06 16:48:01) [GET]
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM `posts` [0m
+Rendering posts/index
+Completed in 10ms (View: 6, DB: 1) | 200 OK [http://localhost/]
+  [4;35;1mSQL (1.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-06-06 16:48:28) [GET]
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM `posts` [0m
+Rendering posts/index
+Completed in 8ms (View: 4, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-06-06 16:48:40) [GET]
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM `posts` [0m
+Rendering posts/index
+  [4;35;1mPost Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Completed in 8ms (View: 3, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-06-06 16:50:18) [GET]
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM `posts` [0m
+
+ActionView::MissingTemplate (Missing template posts/index.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-06-06 16:50:20) [GET]
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM `posts` [0m
+
+ActionView::MissingTemplate (Missing template posts/index.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-06-06 16:50:28) [GET]
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM `posts` [0m
+
+ActionView::MissingTemplate (Missing template posts/index.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-06-06 16:50:29) [GET]
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM `posts` [0m
+
+ActionView::MissingTemplate (Missing template posts/index.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-06-06 16:54:34) [GET]
+  [4;36;1mPost Load (9.3ms)[0m   [0;1mSELECT * FROM `posts` [0m
+Rendering template within layouts/application
+Rendering posts/index
+  [4;35;1mPost Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Completed in 50ms (View: 29, DB: 12) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-06-06 16:56:31) [GET]
+  Parameters: {"action"=>"index", "controller"=>"posts"}
+  [4;36;1mPost Load (0.8ms)[0m   [0;1mSELECT * FROM `posts` [0m
+Rendering template within layouts/application
+Rendering posts/index
+  [4;35;1mPost Columns (249.3ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Completed in 275ms (View: 18, DB: 250) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-06-06 16:56:42) [GET]
+  Parameters: {"action"=>"index", "controller"=>"posts"}
+  [4;36;1mPost Load (0.5ms)[0m   [0;1mSELECT * FROM `posts` [0m
+Rendering template within layouts/application
+Rendering posts/index
+  [4;35;1mPost Columns (2.7ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Completed in 27ms (View: 19, DB: 3) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-06-06 16:56:48) [GET]
+  Parameters: {"action"=>"index", "controller"=>"posts"}
+  [4;36;1mPost Load (1.1ms)[0m   [0;1mSELECT * FROM `posts` [0m
+Rendering template within layouts/application
+Rendering posts/index
+  [4;35;1mPost Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Completed in 15ms (View: 4, DB: 4) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-06-06 16:56:49) [GET]
+  Parameters: {"action"=>"index", "controller"=>"posts"}
+  [4;36;1mPost Load (0.7ms)[0m   [0;1mSELECT * FROM `posts` [0m
+Rendering template within layouts/application
+Rendering posts/index
+  [4;35;1mPost Columns (5.2ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Completed in 16ms (View: 5, DB: 6) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-06-06 16:57:00) [GET]
+  Parameters: {"action"=>"index", "controller"=>"posts"}
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM `posts` [0m
+Rendering template within layouts/application
+Rendering posts/index
+  [4;35;1mPost Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Completed in 17ms (View: 9, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (3.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-06-06 16:58:21) [GET]
+  Parameters: {"action"=>"index", "controller"=>"posts"}
+  [4;36;1mPost Load (9.5ms)[0m   [0;1mSELECT * FROM `posts` [0m
+Rendering template within layouts/application
+Rendering posts/index
+  [4;35;1mPost Columns (12.6ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Completed in 52ms (View: 25, DB: 26) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-06-06 16:58:34) [GET]
+  Parameters: {"action"=>"index", "controller"=>"posts"}
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM `posts` [0m
+Rendering template within layouts/application
+Rendering posts/index
+  [4;35;1mPost Columns (3.7ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Completed in 25ms (View: 16, DB: 4) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-06-06 16:59:11) [GET]
+  Parameters: {"action"=>"index", "controller"=>"posts"}
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM `posts` [0m
+Rendering template within layouts/application
+Rendering posts/index
+  [4;35;1mPost Columns (3.8ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Completed in 25ms (View: 16, DB: 4) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-06-06 16:59:24) [GET]
+  Parameters: {"action"=>"index", "controller"=>"posts"}
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM `posts` [0m
+Rendering template within layouts/application
+Rendering posts/index
+  [4;35;1mPost Columns (6.3ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+
+ActionView::TemplateError (Illegal nesting: content can't be both given on the same line as %p and nested within it.) on line #33 of app/views/layouts/application.haml:
+30:                 %li
+31:                   %h2 O stronie
+32:                   %p Pierwsze spotkanie z Cucumberem 
+33:                     %br
+34:                     i RSpec'em
+35:                 %li
+36:                   %h2 Linki
+
+    app/views/layouts/application.haml:33
+    haml (3.0.9) lib/haml/precompiler.rb:773:in `render_tag'
+    haml (3.0.9) lib/haml/precompiler.rb:214:in `process_line'
+    haml (3.0.9) lib/haml/precompiler.rb:178:in `precompile'
+    haml (3.0.9) lib/haml/engine.rb:121:in `initialize'
+    haml (3.0.9) rails/./lib/haml/template/plugin.rb:29:in `new'
+    haml (3.0.9) rails/./lib/haml/template/plugin.rb:29:in `compile'
+    haml (3.0.9) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.9) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.9) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendered rescues/_trace (81.0ms)
+Rendered rescues/_request_and_response (1.6ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-06-06 16:59:30) [GET]
+  Parameters: {"action"=>"index", "controller"=>"posts"}
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM `posts` [0m
+Rendering template within layouts/application
+Rendering posts/index
+  [4;35;1mPost Columns (5.6ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Completed in 30ms (View: 19, DB: 6) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-06-06 17:00:17) [GET]
+  Parameters: {"action"=>"index", "controller"=>"posts"}
+  [4;36;1mPost Load (0.5ms)[0m   [0;1mSELECT * FROM `posts` [0m
+Rendering template within layouts/application
+Rendering posts/index
+  [4;35;1mPost Columns (2.6ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Completed in 31ms (View: 23, DB: 3) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-06-06 17:00:32) [GET]
+  Parameters: {"action"=>"index", "controller"=>"posts"}
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM `posts` [0m
+Rendering template within layouts/application
+Rendering posts/index
+  [4;35;1mPost Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Completed in 10ms (View: 4, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-06-06 17:00:58) [GET]
+  Parameters: {"action"=>"index", "controller"=>"posts"}
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM `posts` [0m
+Rendering template within layouts/application
+Rendering posts/index
+  [4;35;1mPost Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Completed in 89ms (View: 10, DB: 3) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-06-06 17:01:26) [GET]
+  Parameters: {"action"=>"index", "controller"=>"posts"}
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM `posts` [0m
+Rendering template within layouts/application
+Rendering posts/index
+  [4;35;1mPost Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Completed in 16ms (View: 10, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-06-06 17:02:01) [GET]
+  Parameters: {"action"=>"index", "controller"=>"posts"}
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM `posts` [0m
+Rendering template within layouts/application
+Rendering posts/index
+  [4;35;1mPost Columns (244.1ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Completed in 263ms (View: 15, DB: 245) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-06-06 17:02:20) [GET]
+  Parameters: {"action"=>"index", "controller"=>"posts"}
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM `posts` [0m
+Rendering template within layouts/application
+Rendering posts/index
+  [4;35;1mPost Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Completed in 20ms (View: 14, DB: 3) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-06-06 17:02:49) [GET]
+  Parameters: {"action"=>"index", "controller"=>"posts"}
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM `posts` [0m
+Rendering template within layouts/application
+Rendering posts/index
+  [4;35;1mPost Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Completed in 19ms (View: 13, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-06-06 17:02:57) [GET]
+  Parameters: {"action"=>"index", "controller"=>"posts"}
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM `posts` [0m
+Rendering template within layouts/application
+Rendering posts/index
+  [4;35;1mPost Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Completed in 19ms (View: 13, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-06-06 17:03:05) [GET]
+  Parameters: {"action"=>"index", "controller"=>"posts"}
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM `posts` [0m
+Rendering template within layouts/application
+Rendering posts/index
+  [4;35;1mPost Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Completed in 92ms (View: 86, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-06-06 17:03:14) [GET]
+  Parameters: {"action"=>"index", "controller"=>"posts"}
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM `posts` [0m
+Rendering template within layouts/application
+Rendering posts/index
+  [4;35;1mPost Columns (177.4ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Completed in 196ms (View: 14, DB: 178) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-06-06 17:03:25) [GET]
+  Parameters: {"action"=>"index", "controller"=>"posts"}
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM `posts` [0m
+Rendering template within layouts/application
+Rendering posts/index
+  [4;35;1mPost Columns (231.4ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Completed in 249ms (View: 13, DB: 232) | 200 OK [http://localhost/]

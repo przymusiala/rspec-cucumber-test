@@ -1,0 +1,47 @@
+!!! Strict
+%html{ 'xml:lang' => 'en', :lang => 'en', :xmlns => 'http://www.w3.org/1999/xhtml' }
+  %head
+    %meta{ :content => 'text/html; charset=utf-8', 'http-equiv' => 'content-type' }
+    %title Matrix on Rails
+    = stylesheet_link_tag 'style'
+  %body
+    #wrapper
+      #header-wrapper
+        #header
+          #logo
+            %h1= link_to 'RSpec & Cucumber', '/'
+            %p= link_to 'Adam Przymusiała', 'http://przymusiala.net'
+      #page
+        #page-bgtop
+          #page-bgbtm
+            #content
+              = yield
+              %div{:style => "clear: both;"} &nbsp;
+            #sidebar
+              %ul
+                %li
+                  #search
+                    %form{:action => "#", :method => "get"}
+                      %div
+                        %input#search-text{:name => "s", :type => "text", :value => ""}/
+                        %input#search-submit{:type => "submit", :value => "GO"}/
+                  %div{:style => "clear: both;"}
+                    &nbsp;
+                %li
+                  %h2 O stronie
+                  %p
+                    Pierwsze spotkanie z Cucumberem 
+                    %br
+                    i RSpec'em
+                %li
+                  %h2 Linki
+                  %ul
+                    %li= link_to 'Cucumber', 'http://github.com/aslakhellesoy/cucumber/'
+                    %li= link_to 'KHS Matrix', 'http://matrix.zhr.pl'
+            %div{:style => "clear: both;"} &nbsp;
+    #footer
+      %p
+        Code by
+        = link_to 'Adam Przymusiała', 'http://przymusiala.net'
+        \. Design by
+        = link_to 'Free CSS Templates', "http://freecsstemplates.org/"

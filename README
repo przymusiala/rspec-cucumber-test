@@ -1,0 +1,255 @@
+== RSpec + Cucumber czyli wprowadzenie do testów BDD cz 1.
+
+Wstęp:
+
+Jakiś czas temu miałem przyjemność współorganizować szkolenie "Matrix on Rails" wprowadzające w świat Railsów. Wyznaczone miałem tam do poprowadzenia dwa zajęcia z których jedno jest przyczynkiem do tego wpisu - mam nadzieję że przyda się on nie tylko kursantom :). W gwoli wyjaśnienia, wszystkie komendy poniżej testowane były na OS X (Snow Leopard) - ale myślę że zadziałają na większości systemów około UNIX'owych - w razie problemów proszę o wpis w komentarzach.
+
+Startujemy od założenia projektu:
+
+rails rspec_test -d mysql
+
+Wejścia do katalogu :) :
+
+cd rspec_test
+
+Założenia baz (developerskiej i testowej):
+
+rake db:create
+rake db:create RAILS_ENV=test
+rake db:migrate
+rake db:migrate RAILS_ENV=test
+
+Należy też zainstalować przydatne gemy:
+
+gem install rspec rspec-rails cucumber cucumber-rails webrat term-ansicolor treetop diff-lcs nokogiri builder autotest-rails rcov ZenTest haml random_data email_spec database_cleaner
+
+Teraz kilka poleceń specjalnie dla OS X'a
+
+1) Bundle dla TextMate'a:
+
+mkdir -p ~/Library/Application\ Support/TextMate/Bundles/
+cd ~/Library/Application\ Support/TextMate/Bundles
+git clone git://github.com/aslakhellesoy/cucumber-tmbundle.git Cucumber.tmbundle
+osascript -e 'tell app "TextMate" to reload bundles'
+
+2) Przydatny bajer - notyfikacje o testach w Growl'u:
+
+gem install carlosbrando-autotest-notification --source=http://gems.github.com
+an-install
+
+Następnie generujemy pliki i katalogi dla RSpeca i Cucumbera:
+
+ruby script/generate rspec
+ruby script/generate cucumber
+
+Możemy sprawdzić jakie mamy do dyspozycji zadania:
+
+rake -T cucumber
+
+Oraz dopalić pierwszy raz Cucumbera
+
+rake cucumber
+
+Wynik powinien wyglądać podobnie do:
+
+0 scenarios
+0 steps
+0m0.000s
+
+Aby móc w przyszłości korzystać z automatycznego odpalania testów trzeba dodatkowo wykonać:
+
+export AUTOFEATURE=true
+export RSPEC=true
+
+Cucumber domyślnie korzysta ze słów kluczowych w języku angielskim, jednak bez większego problemu możemy działać po polsku :). W pliku features/*.feature (o którym zaraz będę pisał) należy dodać na początku:
+
+# language: pl
+
+Aby dowiedzieć się jakie słowa kluczowe są dostępne po polsku trzeba wywołać:
+
+cucumber --i18n pl help
+
+| feature          | "Właściwość"          |
+| background       | "Założenia"           |
+| scenario         | "Scenariusz"          |
+| scenario_outline | "Szablon scenariusza" |
+| examples         | "Przykłady"           |
+| given            | "* ", "Zakładając "   |
+| when             | "* ", "Jeżeli "       |
+| then             | "* ", "Wtedy "        |
+| and              | "* ", "Oraz "         |
+| but              | "* ", "Ale "          |
+| given (code)     | "Zakładając"          |
+| when (code)      | "Jeżeli"              |
+| then (code)      | "Wtedy"               |
+| and (code)       | "Oraz"                |
+| but (code)       | "Ale"                 |
+
+Jak już mamy skonfigurowane środowisko czas zabrać się za właściwe testy.
+
+Na początek w katalogu głównym aplikacji wykonujemy:
+
+touch features/pisanie_newsow.feature
+
+Otwieramy w edytorze i uzupełniamy naszą prostą historią:
+
+# language: pl
+
+Właściwość: Pisanie newsów
+  Jako młody bloger
+  Chcę mieć możliwość pisania newsów
+  Dzięki temu ludzie będą mogli poczytać co u mnie słychać
+
+  Scenariusz: Dodanie posta
+    Zakładając istnienie kilku newsów w bazie danych
+    Jeżeli wejdę na stronę główną
+    Wtedy zobaczę listę newsów
+    Oraz każdy news ma swojego autora
+
+(Ostatnie Oraz jest trochę na wyrost ale ładnie obrazuje dostępne słowa kluczowe)
+
+Teraz ponownie wykonujemy
+
+rake cucumber
+
+Wynik powinien być podobny do poniższego:
+
+UUUU
+
+1 scenario (1 undefined)
+4 steps (4 undefined)
+0m0.023s
+
+You can implement step definitions for undefined steps with these snippets:
+
+Zakładając /^istnienie kilku newsów w bazie danych$/ do
+  pending # express the regexp above with the code you wish you had
+end
+
+Jeżeli /^wejdę na stronę główną$/ do
+  pending # express the regexp above with the code you wish you had
+end
+
+Wtedy /^zobaczę listę newsów$/ do
+  pending # express the regexp above with the code you wish you had
+end
+
+Wtedy /^każdy news ma swojego autora$/ do
+  pending # express the regexp above with the code you wish you had
+end
+
+Zgodnie z zaleceniem zabieramy się do implementacji tych kroków, najpierw zakładamy plik:
+
+touch features/step_definitions/pisanie.rb
+
+a następnie przeklejamy to co wygenerował nam wcześniej Cucumber.
+
+Odpalamy:
+
+rake cucumber
+
+I jeśli wynik jest podobny do:
+
+P---
+
+(::) pending steps (::)
+
+features/pisanie_newsow.feature:9:in `Zakładając istnienie kilku newsów w bazie danych'
+
+1 scenario (1 pending)
+4 steps (3 skipped, 1 pending)
+0m0.021s
+rake aborted!
+
+To znaczy że jesteśmy na dobrej drodze :). Powyższe oznacza że testy się wykonały ale zatrzymały na metodzie 'pending' sygnalizującej że dany test wymaga uzupełnienia prawdziwym kodem testującym.
+
+W celu skrócenia tego postu pozwolę sobie na początku uzupełnić wszystkie testy:
+
+Zakładając /^istnienie kilku newsów w bazie danych$/ do
+  Post.create(:title => 'Pierwszy', :author => 'Adam',  :body => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.')
+  Post.create(:title => 'Drugi',    :author => 'Karol', :body => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.')
+end
+
+Jeżeli /^wejdę na stronę główną$/ do
+  visit '/'
+end
+
+Wtedy /^zobaczę listę newsów$/ do
+  response.should contain 'Pierwszy'
+  response.should contain 'Drugi'
+end
+
+Wtedy /^każdy news ma swojego autora$/ do
+  response.should contain 'Adam'
+  response.should contain 'Karol'
+end
+
+W pierwszym kroku symulujemy dodanie dwóch postów do bazy danych, w drugim odwiedzamy stronę główną, w trzecim sprawdzamy czy zawiera ona w sobie założone teksty.
+
+Myślę że w tym momencie można już w drugiej konsoli uruchomić program autospec zamiast ciągłego odpalania z ręki rake cucumber. W tym momencie powinny wyskoczyć następujące komunikaty o błędach:
+
+F---
+
+(::) failed steps (::)
+
+uninitialized constant Post (NameError)
+./features/step_definitions/pisanie.rb:2:in `/^istnienie kilku newsów w bazie danych$/'
+features/pisanie_newsow.feature:9:in `Zakładając istnienie kilku newsów w bazie danych'
+
+Failing Scenarios:
+cucumber features/pisanie_newsow.feature:8 # Scenario: Dodanie posta
+
+1 scenario (1 failed)
+4 steps (1 failed, 3 skipped)
+0m0.021s
+rake aborted!
+
+Zgodnie z przewidywaniami nie powiodło się dodanie do bazy. Aby przejść dalej należy wygenerować model obsługujący posty:
+
+ruby script/generate rspec_model Post title:string body:text author:string
+
+i zmigrować bazę:
+
+rake db:migrate
+
+Teraz przeszliśmy krok pierwszy (1 failed, 2 skipped, 1 passed) i zabieramy się za krok drugi: 
+
+Kasujemy public/index.html i w  pliku config/routes.rb dodajemy:
+
+map.root :controller => 'posts'
+
+Cucumber wyrzuca błąd o braku kontrolera postów:
+
+uninitialized constant PostsController (NameError)
+
+Dodajemy go następująco (wraz z akcją index do wyświetlenia wszystkich postów):
+
+ruby script/generate rspec_controller Posts index
+
+Kolejny komunikat:
+
+expected the following element's content to include "Pierwszy":
+Posts#index
+Find me in app/views/posts/index.html.erb
+
+Wyświetla już zawartość wygenerowanego widoku od akcji index (app/views/posts/index.html.erb). Teraz wystarczy wyciągnąć w kontrolerze wszystkie posty
+
+@posts = Post.all
+
+a w widoku odpowiednio je wylistować:
+
+<% @posts.each do |post| %>
+  <%= post.title %><br/>
+  <%= post.author %><br/>
+  <%= post.body %><br/>
+<% end %>
+
+Gotowe :)
+
+....
+
+1 scenario (1 passed)
+4 steps (4 passed)
+0m0.141s
+
+Cała aplikacja z dodanym arkuszem stylów i zmienionymi szablonami (zamiast erb jest haml) dostępna jest do pobrania na githubie.
